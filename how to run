@@ -1,0 +1,35 @@
+To run this project on a fresh college PC, you don't need to install everything "from scratch" manually—you just need the core environment. Since your code is already on GitHub, the process is much faster.
+
+Here is the step-by-step checklist to get your project running on a new machine:
+
+1. Install Core Environment
+You must have these two things installed on the PC first:
+
+Node.js: Download the LTS version from nodejs.org. This automatically installs npm (Node Package Manager).
+
+Git: Download from git-scm.com so you can clone your code.
+
+2. Clone the Project
+Open a terminal (Command Prompt or PowerShell) and navigate to where you want to save the work (e.g., Desktop).
+
+Bash
+git clone https://github.com/Dnyaneshsasale/AngularJS-Practical-Complete-Code-Explanation.git
+cd AngularJS-Practical-Complete-Code-Explanation
+3. Install Global Dependencies
+You need the Angular CLI installed globally on the college PC to use the ng commands:
+
+Bash
+npm install -g @angular/cli
+4. Install Project Dependencies (The "Magic" Step)
+When you pushed to GitHub, you didn't push the node_modules folder (which is correct). You must tell the new PC to look at your package.json file and download all the libraries your project needs:
+
+Bash
+npm install
+Note: This will create a new node_modules folder on the college PC. This step might take a minute or two.
+
+5. Run the Project
+Once npm install finishes, you are ready to go:
+
+Bash
+ng serve
+Open your browser to http://localhost:4200/.
